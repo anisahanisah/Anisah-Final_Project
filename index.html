@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CV anisah</title>
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="p-5 text-[#a1c1df] bg-[#fff] shadow md:flex md:item-center md:justify-between">
+        <div class="flex justify-between items-center">
+            <span class="text-3x1 cursor-pointer mx-2 md:hidden block">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+            </span>
+        </div>
+
+        <ul class="md:flex md:items-center z-[-1]-auto md:static absolute bg-[#fff] w-full left-0 md:w-auto md:py-0 py-4 md:pl-o pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500">
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#" class="text-xl hover:text-[#0092be] duration-500">Home</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#about" class="text-xl hover:text-[#0092be] duration-500">About</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#Experience" class="text-xl hover:text-[#0092be] duration-500">Experience</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#skills" class="text-xl hover:text-[#0092be] duration-500">Skills</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#Portofolio" class="text-xl hover:text-[#0092be] duration-500">Portofolio</a>
+            </li>
+            <li class="mx-4 my-6 md:my-0">
+                <a href="#kontak" class="text-xl hover:text-[#0092be] duration-500">Contact</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="bg-[#a1c1df]">
+        <div class="grid sm:grid-cols-2 lg:grid-cols-2 gap-2 md:gap-4 lg:gap-2 p-10">
+            <div class="flex flex-wrap justify-center md:justify-center lg:justify-end "><img src="Img/anisah.png" alt="" class="w-100 h-45 first-line"></div>
+            <div class=" font-bold text-left font-poppins p-14">
+                <h1 class="text-5xl text-[#000]">Hello, I'm Anisah</h1>
+                <h3 class="text-1xl text-[#fff]">welcome to my first website which contains biodata to my experience,let's have a look so we can get to know each other
+
+                </h3>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-[#FFF]">
+        <div class="text-center text-left font-poppins p-5">
+            <h2 class=" font-bold text-4xl text-[#000]" id="about">About Me</h2>
+            <br>
+            <p class="text-xl">saya adalah mahasiswa dari <strong>Universitas Singaperbangsa karawang </strong>
+            saya asli dari kota karawang selama kuliah saya aktif dibeberapa kepanitian dan sekarang saya sedang mengikuti salah satu program kampus merdeka yaitu Studi independent di Ruangguru,saya memiliki minat dibidang front end enggrinering.
+            </p>
+        </div>
+        <div class="h-1/3 px-12 py-8 bg-white content-center text-center">
+            <h2 class=" font-bold text-4xl text-[#000] p-5" id="education">Education</h2>
+            <div class="container-education sm:gap-8 lg:gap-16 mt-2  text-center">
+                <div class="education1">
+                    <h2 class="text-md font-bold">Universitas Singaperbangsa Karawang</h2>
+                    <p>(2020 - Present)</p>
+                </div>
+                <div class="education2">
+                    <h2 class="text-md font-bold">SMK Negeri Batujaya</h2>
+                    <p>(2017 - 2020)</p>
+                </div>
+                <div class="education3">
+                    <h2 class="text-md font-bold"> SMP Negeri 1 Batujaya</h2>
+                    <p>(2014 - 2017)</p>
+                </div>
+                <div class="education4">
+                    <h2 class="text-md font-bold">SDN Telukbnago 2</h2>
+                    <p>(2008 - 2014)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="Experience" class="bg-[#dbeafe]" >
+        <h2 class=" text-center font-bold text-4xl text-[#000] p-5 h-40 " >Experience</h2>
+            <div class="flex flex-row-5 justify-center">
+                <div><img src="Img/gambar 1.jpeg" alt="" width="400" height="400"></div>
+                <div><img src="Img/gambar1.jpeg "alt="" width="200" height="200"></div>
+                <div><img src="Img/gambar2.jpeg" alt="" width="400" height="400"></div>
+            </div>
+    </section>
+
+    <script>
+        function Menu(e){
+            let list = document.querySelector('ul');
+
+            e.name === 'menu' ? (e.name = "close", list.classList.add('top-[80px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[80px]'), list.classList.remove('opacity-100'))
+        }
+    </script>
+    <section id="skills" class="bg-[#FFF]">
+        <h2 class=" text-center font-bold text-4xl text-[#000] py-5">Skills</h2>
+            <div class="flex flex-row-5 justify-center">
+                <div><img src="Img/canva.png" alt="" width="100" height="100"></div>
+                <div><img src="Img/figma.png" alt="" width="100" height="100"></div>
+                <div><img src="Img/download (1).jpg" alt="" width="100" height="100"></div>
+                <div><img src="Img/download.jpg" alt="" width="150" height="100"></div>
+            </div>
+    </section>
+    <br>
+    <br>
+    <br>
+        <h2 class="text-center font-bold text-4xl text-[#000000] p-5" id="Portofolio">Portofolio</h2>
+        <div class="container mx-auto px-2 md:flex md:flex-wrap md:gap-10 mb-10 pb-10 ">
+            <div class="rounded-lg shadow-lg bg-[#fff] max-w-xs mx-auto">
+                <a href="#!">
+                    <img class="rounded-t-lg w-full" src="Img/G1.jpg" alt="">
+                </a>
+                <div class="px-5 py-5">
+                    <h2 class="text-gray-500 text-xl font-bold mb-2"> Cactus</h2>
+                    <p class="text-gray-500 text-base mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A voluptatibus in officiis maiores autem dignissimos quaerat, </p>
+                </div>
+            </div>
+            <div class="rounded-lg shadow-lg bg-[#fff] max-w-xs mx-auto mb-5">
+                <a href="#!">
+                    <img class="rounded-t-lg w-full" src="Img/G2.jpg" alt="">
+                </a>
+                <div class="p-4">
+                    <h2 class="text-gray-500 text-xl font-bold mb-2">Future of Tecnology</h2>
+                    <p class="text-gray-500 text-base mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A voluptatibus in officiis maiores autem dignissimos quaerat, </p>
+                </div>
+            </div>
+                <div class="rounded-lg shadow-lg bg-[#fff] max-w-xs mx-auto mb-5">
+                    <a href="#!">
+                        <img class="rounded-t-lg w-full" src="Img/G3.jpg" alt="">
+                    </a>
+                    <div class="p-4">
+                        <h2 class="text-gray-500 text-xl font-bold mb-2"> Simple Coffe</h2>
+                        <p class="text-gray-500 text-base mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A voluptatibus in officiis maiores autem dignissimos quaerat, </p>
+                    </div>
+                </div>
+                    <div class="rounded-lg shadow-lg bg-[#fff] max-w-xs mx-auto mb-5">
+                        <a href="#!">
+                            <img class="rounded-t-lg w-full" src="Img/G4.jpg" alt="">
+                        </a>
+                        <div class="p-4">
+                            <h2 class="text-gray-500 text-xl font-bold mb-2"> Delicious Food</h2>
+                            <p class="text-gray-500 text-base mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A voluptatibus in officiis maiores autem dignissimos quaerat, </p>
+                        </div>
+                    </div>
+                        <div class="rounded-lg shadow-lg bg-[#fff] max-w-xs mx-auto mb-5">
+                            <a href="#!">
+                                <img class="rounded-t-lg w-full" src="Img/G5.jpg" alt="">
+                            </a>
+                            <div class="p-4">
+                                <h2 class="text-gray-500 text-xl font-bold mb-2"> Dhasboard</h2>
+                                <p class="text-gray-500 text-base mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A voluptatibus in officiis maiores autem dignissimos quaerat, </p>
+                            </div>
+                        </div>
+                            <div class="rounded-lg shadow-lg bg-[#fff] max-w-xs mx-auto mb-5">
+                                <a href="#!">
+                                    <img class="rounded-t-lg w-full" src="Img/G6.webp" alt="">
+                                </a>
+                                <div class="p-4">
+                                    <h2 class="text-gray-500 text-xl font-bold mb-2"> UI/UX Design</h2>
+                                    <p class="text-gray-500 text-base mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A voluptatibus in officiis maiores autem dignissimos quaerat, </p>
+                                </div>
+                            </div>
+                                <div class="rounded-lg shadow-lg bg-[#fff] max-w-xs mx-auto mb-5">
+                                    <a href="#!">
+                                        <img class="rounded-t-lg w-full" src="Img/G7.webp" alt="">
+                                    </a>
+                                    <div class="p-4">
+                                        <h2 class="text-gray-500 text-xl font-bold mb-2"> UI Kit Landing Page</h2>
+                                        <p class="text-gray-500 text-base mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A voluptatibus in officiis maiores autem dignissimos quaerat, </p>
+                                    </div>
+                                </div>
+                                    <div class="rounded-lg shadow-lg bg-[#fff] max-w-xs mx-auto mb-5">
+                                        <a href="#!">
+                                            <img class="rounded-t-lg w-full" src="Img/G8.webp" alt="">
+                                        </a>
+                                        <div class="p-4">
+                                            <h2 class="text-gray-500 text-xl font-bold mb-2"> Code Testing</h2>
+                                            <p class="text-gray-500 text-base mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A voluptatibus in officiis maiores autem dignissimos quaerat, </p>
+                                        </div>
+                                    </div>
+                                        <div class="rounded-lg shadow-lg bg-[#fff] max-w-xs mx-auto mb-5">
+                                            <a href="#!">
+                                                <img class="rounded-t-lg w-full" src="Img/G9.webp" alt="">
+                                            </a>
+                                            <div class="p-4">
+                                                <h2 class="text-gray-500 text-xl font-bold mb-2"> Easy Design Easy Website</h2>
+                                                <p class="text-gray-500 text-base mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A voluptatibus in officiis maiores autem dignissimos quaerat, </p>
+                                            </div>
+                                        </div>
+                                            <div class="rounded-lg shadow-lg bg-[#fff] max-w-xs mx-auto mb-5">
+                                                <a href="#!">
+                                                    <img class="rounded-t-lg w-full" src="Img/G10.webp" alt="">
+                                                </a>
+                                                <div class="p-4">
+                                                    <h2 class="text-gray-500 text-xl font-bold mb-2"> Mobile UI/UX</h2>
+                                                    <p class="text-gray-500 text-base mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A voluptatibus in officiis maiores autem dignissimos quaerat, </p>
+                                                </div>
+                                            </div>
+                                                <div class="rounded-lg shadow-lg bg-[#fff] max-w-xs mx-auto mb-5">
+                                                    <a href="#!">
+                                                        <img class="rounded-t-lg w-full" src="Img/G11.jpg" alt="">
+                                                    </a>
+                                                    <div class="p-4">
+                                                        <h2 class="text-gray-500 text-xl font-bold mb-2"> Simple Coffe</h2>
+                                                        <p class="text-gray-500 text-base mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A voluptatibus in officiis maiores autem dignissimos quaerat, </p>
+                                                    </div>
+                                                </div>
+                                                    <div class="rounded-lg shadow-lg bg-[#fff] max-w-xs mx-auto mb-5">
+                                                        <a href="#!">
+                                                            <img class="rounded-t-lg w-full" src="Img/G12.jpg" alt="">
+                                                        </a>
+                                                        <div class="p-4">
+                                                            <h2 class="text-gray-500 text-xl font-bold mb-2"> Online Shopping</h2>
+                                                            <p class="text-gray-500 text-base mb-3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. A voluptatibus in officiis maiores autem dignissimos quaerat, </p>
+                                                        </div>
+                                                        </div>
+                    </div>
+                </div>
+    <br>
+    <br>
+    <section id="kontak" class="bg-[#dbeafe]">
+        <h1 class=" text-center font-bold text-4xl text-[#000000]">Contact me</h1>
+              <label for="name"  class="block mb-2 text-sm font-large text-gray-800 dark:text-gray-200 ">Name : </label>
+              <input type="text" id="name" name="name" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-auto p-2.5" placeholder="enter your name" required/><br />
+              <label for="massage">Massage : </label>
+              <input type="text" id="Massage" name="massage" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg block w-auto p-2.5" placeholder="Enter your Massage" /><br />
+            <input type="submit" value="submit" class="text-white bg-[#0092be] hover:bg-[#78ecc4] focus:outline-none font-medium rounded-lg text-sm w-full
+            sm:w-auto px-5 py-2.5 text-center"></br>
+        </div>
+    </section>
+</body>
+</html>
